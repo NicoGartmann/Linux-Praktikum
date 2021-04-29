@@ -1,0 +1,14 @@
+#!/bin/bash
+succ :=$(shell pdflatex linux-20 && bibtex-20)
+set_succ :=$(eval my_succ=$(succ))
+
+main.pdf: linux-20.tex linux-20.bib
+	$(set_succ)
+	ifneq (,$(findstring Warning, $(shell pdflatex-linux-20)))
+		pdflatex linux-20
+	endif
+
+.PHONY: clean
+
+clean:
+	-rm *.aux *.bbl *.blg *.log *.pdf
