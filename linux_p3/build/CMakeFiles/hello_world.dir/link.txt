@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/hello_world.dir/src/hello_world.cpp.o  -o hello_world  -Wl,-rpath,/home/nico/Linux-Praktikum/linux_p3/build /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 libmylibrary.so /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.71.0 -lpthread 

@@ -3,3 +3,4 @@ linux_p1/keydir/*.save
 linux_p2/Task3.1/all
 linux_p2/Task3.1/*.o
 linux_p2/Task3.1/*.a
+linux_p3/build/*
