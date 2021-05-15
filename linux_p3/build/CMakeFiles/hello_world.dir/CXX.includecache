@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/MyLibrary.h
+
+/home/nico/Linux-Praktikum/linux_p3/src/hello_world.cpp
+boost/thread/thread.hpp
+-
+MyLibrary.h
+-
+iostream
+-
+
