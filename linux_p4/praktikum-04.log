@@ -1,0 +1,371 @@
+Script started on 2021-06-01 14:57:53+02:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="189" LINES="46"]
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ whoami
+itsadmin
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ id
+uid=1000(itsadmin) gid=1000(itsadmin) Gruppen=1000(itsadmin),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),109(netdev),111(bluetooth)
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ su - root
+Passwort: 
+root@itsclient:~# whoami
+root
+root@itsclient:~# exit
+Abgemeldet
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ [K]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ id
+uid=1000(itsadmin) gid=1000(itsadmin) Gruppen=1000(itsadmin),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),109(netdev),111(bluetooth)
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ id
+uid=1000(itsadmin) gid=1000(itsadmin) Gruppen=1000(itsadmin),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),109(netdev),111(bluetooth)
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ [K]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ apt-get update
+Paketlisten werden gelesen... 0%Paketlisten werden gelesen... 100%Paketlisten werden gelesen... Fertig
+E: Sperrdatei /var/lib/apt/lists/lock konnte nicht geöffnet werden. - open (13: Keine Berechtigung)
+E: Das Verzeichnis /var/lib/apt/lists/ kann nicht gesperrt werden.
+W: Problem beim Entfernen (unlink) der Datei /var/cache/apt/pkgcache.bin - RemoveCaches (13: Keine Berechtigung)
+W: Problem beim Entfernen (unlink) der Datei /var/cache/apt/srcpkgcache.bin - RemoveCaches (13: Keine Berechtigung)
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ whoami
+itsadmin
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo --user=root apt-get update
+0% [Wird verarbeitet]                     Holen:1 http://security.debian.org/debian-security buster/updates InRelease [65,4 kB]
+0% [Verbindung mit ftp.de.debian.org (141.76.2.4)] [1 InRelease 2.267 B/65,4 kB 3%]                                                                                   OK:2 http://ftp.de.debian.org/debian buster InRelease
+                                                                                   0% [Warten auf Kopfzeilen] [1 InRelease 56,0 kB/65,4 kB 86%]                                                            Holen:3 http://ftp.de.debian.org/debian buster-updates InRelease [51,9 kB]
+0% [3 InRelease 13,6 kB/51,9 kB 26%] [1 InRelease 59,9 kB/65,4 kB 92%]                                                                      0% [3 InRelease 13,6 kB/51,9 kB 26%]                                    0% [Wird verarbeitet]0% [Wird verarbeitet]0% [Wird verarbeitet]                     Holen:4 http://security.debian.org/debian-security buster/updates/main Sources [186 kB]
+0% [4 Sources 15,4 kB/186 kB 8%]                                0% [Wird verarbeitet]0% [4 Sources store 0 B] [Warten auf Kopfzeilen]                                                Holen:5 http://security.debian.org/debian-security buster/updates/main amd64 Packages [291 kB]
+0% [4 Sources store 0 B] [5 Packages 1.296 B/291 kB 0%]                                                       0% [5 Packages 110 kB/291 kB 38%]74% [5 Packages 207 kB/291 kB 71%]                                  83% [Wird verarbeitet]83% [5 Packages store 0 B]                          Holen:6 http://security.debian.org/debian-security buster/updates/main Translation-en [151 kB]
+83% [5 Packages store 0 B] [6 Translation-en 0 B/151 kB 0%]                                                           99% [5 Packages store 0 B]                          99% [Wird verarbeitet]99% [6 Translation-en store 0 B]                                100% [Wird verarbeitet]                       Es wurden 745 kB in 1 s geholt (542 kB/s).
+Paketlisten werden gelesen... 0%Paketlisten werden gelesen... 0%Paketlisten werden gelesen... 0%Paketlisten werden gelesen... 28%Paketlisten werden gelesen... 52%Paketlisten werden gelesen... 52%Paketlisten werden gelesen... 52%Paketlisten werden gelesen... 52%Paketlisten werden gelesen... 60%Paketlisten werden gelesen... 60%Paketlisten werden gelesen... 95%Paketlisten werden gelesen... 95%Paketlisten werden gelesen... 95%Paketlisten werden gelesen... 97%Paketlisten werden gelesen... 97%Paketlisten werden gelesen... 98%Paketlisten werden gelesen... 98%Paketlisten werden gelesen... 98%Paketlisten werden gelesen... 98%Paketlisten werden gelesen... 98%Paketlisten werden gelesen... 98%Paketlisten werden gelesen... Fertig
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ whoami
+itsadmin
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo apt-get update
+0% [Wird verarbeitet]                     OK:1 http://security.debian.org/debian-security buster/updates InRelease
+0% [Verbindung mit ftp.de.debian.org (141.76.2.4)]                                                  OK:2 http://ftp.de.debian.org/debian buster InRelease
+                                                  0% [Warten auf Kopfzeilen]                          OK:3 http://ftp.de.debian.org/debian buster-updates InRelease
+                          0% [Wird verarbeitet]0% [Wird verarbeitet]0% [Wird verarbeitet]20% [Wird verarbeitet]                      Paketlisten werden gelesen... 0%Paketlisten werden gelesen... 0%Paketlisten werden gelesen... 0%Paketlisten werden gelesen... 32%Paketlisten werden gelesen... 52%Paketlisten werden gelesen... 52%Paketlisten werden gelesen... 52%Paketlisten werden gelesen... 52%Paketlisten werden gelesen... 60%Paketlisten werden gelesen... 60%Paketlisten werden gelesen... 95%Paketlisten werden gelesen... 95%Paketlisten werden gelesen... 97%Paketlisten werden gelesen... 97%Paketlisten werden gelesen... 98%Paketlisten werden gelesen... 98%Paketlisten werden gelesen... 98%Paketlisten werden gelesen... 98%Paketlisten werden gelesen... 98%Paketlisten werden gelesen... 98%Paketlisten werden gelesen... Fertig
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ whoami
+itsadmin
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo whoami
+root
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo useradd --create-home dummy1
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo passwd dummy1
+Geben Sie ein neues Passwort ein: 
+Geben Sie das neue Passwort erneut ein: 
+passwd: Passwort erfolgreich geändert
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ su - dummy1
+Passwort: 
+$ id
+uid=1001(dummy1) gid=1001(dummy1) Gruppen=1001(dummy1)
+$ tou   nano datei1.txt
+[?1049h[22;0;0t[1;46r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[44;88H(B[0;7m[ Neue Datei ](B[m[H(B[0;7m  GNU nano 3.2                                                                             datei1.txt                                                                                        [1;188H(B[m[45d(B[0;7m^G(B[m Hilfe[45;18H(B[0;7m^O(B[m Speichern     (B[0;7m^W(B[m Wo ist[45;52H(B[0;7m^K(B[m Ausschneiden  (B[0;7m^J(B[m Ausrichten    (B[0;7m^C(B[m Cursor[45;103H(B[0;7mM-U(B[m Rückgängig   (B[0;7mM-A(B[m Text markiere(B[0;7mM-](B[m Zu Klammer   (B[0;7mM-Q(B[m Vorige[171G(B[0;7m^B(B[m Zurück[46d(B[0;7m^X(B[m Beenden[18G(B[0;7m^R(B[m Datei öffnen  (B[0;7m^\(B[m Ersetzen[52G(B[0;7m^U(B[m Ausschn. r    (B[0;7m^T(B[m Rechtschr.    (B[0;7m^_(B[m Zu Zeile[103G(B[0;7mM-E(B[m Wiederholen  (B[0;7mM-6(B[m Kopieren     (B[0;7m^Q(B[m Wo war[46;154H(B[0;7mM-W(B[m Nächste[171G(B[0;7m^F(B[m Vorwärts[44d[3d[39;49m(B[m[?12l[?25h[?25l[1;179H(B[0;7mVerändert(B[m[3db[?12l[?25h[?25le[?12l[?25h[?25ll[?12l[?25h[?25li[?12l[?25h[?25le[?12l[?25h[?25lb[?12l[?25h[?25li[?12l[?25h[?25lg[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l [?12l[?25h[?25lI[?12l[?25h[?25ln[?12l[?25h[?25lh[?12l[?25h[?25la[?12l[?25h[?25ll[?12l[?25h[?25lt[?12l[?25h[?25l[1;188H[1;179H(B[0;7m         (B[m[44;84H(B[0;7m[ 1 Zeile geschrieben ](B[m[3;18H[?12l[?25h[?25l[44d[J[46;189H[?12l[?25h[46;1H[?1049l[23;0;0t[?1l>$ ls -l /home/dummy1
+insgesamt 4
+-rw-r--r-- 1 dummy1 dummy1 18 Jun  1 15:02 datei1.txt
+$ su - root
+Passwort: 
+root@itsclient:~# sed -i "s/dummy1/willi/g" /etc/passwd
+root@itsclient:~# exit
+Abgemeldet
+$ ls -l /hoem m  	me/	dummy1
+insgesamt 4
+-rw-r--r-- 1 willi dummy1 18 Jun  1 15:02 datei1.txt
+$ id
+uid=1001(willi) gid=1001(dummy1) Gruppen=1001(dummy1)
+$ su - root
+Passwort: 
+root@itsclient:~# sed -i "s/willi/dummy1/ g" [K /etc/passwd
+root@itsclient:~# exit
+Abgemeldet
+$ whoami
+dummy1
+$ id
+uid=1001(dummy1) gid=1001(dummy1) Gruppen=1001(dummy1)
+$ exit
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ whoami
+itsadmin
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo deluser --remove-home --quit[Ket dummy1
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ps
+  PID TTY          TIME CMD
+  977 pts/2    00:00:00 bash
+ 1932 pts/2    00:00:00 ps
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ echo $$
+977
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ pgrep bash
+972
+977
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ps aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.4  0.4 103936 10048 ?        Ss   14:56   0:02 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    14:56   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        I<   14:56   0:00 [rcu_gp]
+root         4  0.0  0.0      0     0 ?        I<   14:56   0:00 [rcu_par_gp]
+root         5  0.0  0.0      0     0 ?        I    14:56   0:00 [kworker/0:0-ata_sff]
+root         6  0.0  0.0      0     0 ?        I<   14:56   0:00 [kworker/0:0H-kblockd]
+root         8  0.0  0.0      0     0 ?        I<   14:56   0:00 [mm_percpu_wq]
+root         9  0.0  0.0      0     0 ?        S    14:56   0:00 [ksoftirqd/0]
+root        10  0.0  0.0      0     0 ?        I    14:56   0:00 [rcu_sched]
+root        11  0.0  0.0      0     0 ?        I    14:56   0:00 [rcu_bh]
+root        12  0.0  0.0      0     0 ?        S    14:56   0:00 [migration/0]
+root        14  0.0  0.0      0     0 ?        S    14:56   0:00 [cpuhp/0]
+root        15  0.0  0.0      0     0 ?        S    14:56   0:00 [kdevtmpfs]
+root        16  0.0  0.0      0     0 ?        I<   14:56   0:00 [netns]
+root        17  0.0  0.0      0     0 ?        S    14:56   0:00 [kauditd]
+root        18  0.0  0.0      0     0 ?        S    14:56   0:00 [khungtaskd]
+root        19  0.0  0.0      0     0 ?        S    14:56   0:00 [oom_reaper]
+root        20  0.0  0.0      0     0 ?        I<   14:56   0:00 [writeback]
+root        21  0.0  0.0      0     0 ?        S    14:56   0:00 [kcompactd0]
+root        22  0.0  0.0      0     0 ?        SN   14:56   0:00 [ksmd]
+root        23  0.0  0.0      0     0 ?        SN   14:56   0:00 [khugepaged]
+root        24  0.0  0.0      0     0 ?        I<   14:56   0:00 [crypto]
+root        25  0.0  0.0      0     0 ?        I<   14:56   0:00 [kintegrityd]
+root        26  0.0  0.0      0     0 ?        I<   14:56   0:00 [kblockd]
+root        27  0.0  0.0      0     0 ?        I<   14:56   0:00 [edac-poller]
+root        28  0.0  0.0      0     0 ?        I<   14:56   0:00 [devfreq_wq]
+root        29  0.0  0.0      0     0 ?        S    14:56   0:00 [watchdogd]
+root        31  0.1  0.0      0     0 ?        I    14:56   0:00 [kworker/0:2-events]
+root        32  0.0  0.0      0     0 ?        S    14:56   0:00 [kswapd0]
+root        50  0.0  0.0      0     0 ?        I<   14:56   0:00 [kthrotld]
+root        51  0.0  0.0      0     0 ?        I<   14:56   0:00 [ipv6_addrconf]
+root        61  0.0  0.0      0     0 ?        I<   14:56   0:00 [kstrp]
+root       114  0.0  0.0      0     0 ?        I<   14:56   0:00 [ata_sff]
+root       116  0.0  0.0      0     0 ?        S    14:56   0:00 [scsi_eh_0]
+root       118  0.0  0.0      0     0 ?        I<   14:56   0:00 [scsi_tmf_0]
+root       120  0.0  0.0      0     0 ?        S    14:56   0:00 [scsi_eh_1]
+root       122  0.0  0.0      0     0 ?        I<   14:56   0:00 [scsi_tmf_1]
+root       125  0.0  0.0      0     0 ?        I    14:56   0:00 [kworker/u2:2-events_unbound]
+root       126  0.0  0.0      0     0 ?        S    14:56   0:00 [scsi_eh_2]
+root       127  0.0  0.0      0     0 ?        I<   14:56   0:00 [scsi_tmf_2]
+root       129  0.0  0.0      0     0 ?        I    14:56   0:00 [kworker/u2:3-events_unbound]
+root       160  0.0  0.0      0     0 ?        I<   14:56   0:00 [kworker/0:1H-kblockd]
+root       197  0.0  0.0      0     0 ?        I<   14:56   0:00 [kworker/u3:0]
+root       199  0.0  0.0      0     0 ?        S    14:56   0:00 [jbd2/sda1-8]
+root       200  0.0  0.0      0     0 ?        I<   14:56   0:00 [ext4-rsv-conver]
+root       238  0.0  0.3  24220  8164 ?        Ss   14:56   0:00 /lib/systemd/systemd-journald
+root       251  0.0  0.2  22688  5308 ?        Ss   14:56   0:00 /lib/systemd/systemd-udevd
+root       277  0.0  0.0      0     0 ?        I<   14:56   0:00 [ttm_swap]
+systemd+   372  0.0  0.3  95148  6560 ?        Ssl  14:56   0:00 /lib/systemd/systemd-timesyncd
+root       380  0.1  0.2   8084  4832 ?        Ss   14:56   0:00 /usr/sbin/haveged --Foreground --verbose=1 -w 1024
+root       416  0.0  0.2   9488  5816 ?        Ss   14:56   0:00 /sbin/dhclient -4 -v -i -pf /run/dhclient.enp0s3.pid -lf /var/lib/dhcp/dhclient.enp0s3.leases -I -df /var/lib/dhcp/dhclient6
+avahi      454  0.0  0.1   8004  3160 ?        Ss   14:56   0:00 avahi-daemon: running [itsclient.local]
+root       455  0.0  0.3 238840  7036 ?        Ssl  14:56   0:00 /usr/lib/accountsservice/accounts-daemon
+root       456  0.0  0.3 225824  7924 ?        Ssl  14:56   0:00 /usr/sbin/rsyslogd -n -iNONE
+root       464  0.0  0.1   8504  2588 ?        Ss   14:56   0:00 /usr/sbin/cron -f
+root       466  0.0  0.5 398560 12100 ?        Ssl  14:56   0:00 /usr/lib/udisks2/udisksd
+root       470  0.0  0.3  19488  7428 ?        Ss   14:56   0:00 /lib/systemd/systemd-logind
+message+   473  0.0  0.2   9488  4832 ?        Ss   14:56   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root       483  0.0  0.2  19768  5228 ?        Ss   14:56   0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+root       485  0.0  0.4 318320 10160 ?        Ssl  14:56   0:00 /usr/sbin/ModemManager --filter-policy=strict
+root       489  0.0  0.1   5344  2256 ?        Ss   14:56   0:00 /usr/sbin/anacron -d -q -s
+avahi      490  0.0  0.0   7872   288 ?        S    14:56   0:00 avahi-daemon: chroot helper
+root       504  0.0  0.4 240368  8652 ?        Ssl  14:56   0:00 /usr/lib/policykit-1/polkitd --no-debug
+root       552  0.0  0.9 110356 19976 ?        Ssl  14:56   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root       562  0.0  0.3  15852  6536 ?        Ss   14:56   0:00 /usr/sbin/sshd -D
+root       563  0.0  0.0   5612  1600 tty1     Ss+  14:56   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root       572  0.0  0.6 137896 13964 ?        Ssl  14:56   0:00 /usr/bin/sddm
+root       590  1.9  4.8 264968 98464 tty7     Ssl+ 14:56   0:11 /usr/lib/xorg/Xorg -nolisten tcp -auth /var/run/sddm/{c91d6fba-ae9d-4492-9cff-6f9ce6a1f7e0} -background none -noreset -displ
+root       713  0.0  0.4 258640  8980 ?        Ssl  14:56   0:00 /usr/lib/upower/upowerd
+root       721  0.0  0.6  59516 13952 ?        S    14:56   0:00 /usr/lib/x86_64-linux-gnu/sddm/sddm-helper --socket /tmp/sddm-auth30c7201b-908a-44f7-a40b-918c16ac83b6 --id 1 --start /usr/b
+itsadmin   725  0.0  0.4  21284  9256 ?        Ss   14:56   0:00 /lib/systemd/systemd --user
+itsadmin   726  0.0  0.1 104828  2380 ?        S    14:56   0:00 (sd-pam)
+itsadmin   737  0.0  1.9 303228 39700 ?        Sl   14:56   0:00 /usr/bin/kwalletd5 --pam-login 7 3
+itsadmin   738  0.0  0.0   2388  1620 ?        S    14:56   0:00 /bin/sh /usr/bin/startkde
+itsadmin   750  0.0  0.2   8924  4304 ?        Ss   14:56   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+itsadmin   767  0.0  0.0   5852   468 ?        Ss   14:56   0:00 /usr/bin/ssh-agent /usr/bin/startkde
+itsadmin   790  0.0  0.0   2188    84 ?        S    14:56   0:00 /usr/lib/x86_64-linux-gnu/libexec/kf5/start_kdeinit --kded +kcminit_startup
+itsadmin   791  0.0  1.0 114780 20540 ?        Ss   14:56   0:00 kdeinit5: Running...
+itsadmin   792  0.0  1.8 299884 38260 ?        Sl   14:56   0:00 /usr/lib/x86_64-linux-gnu/libexec/kf5/klauncher --fd=9
+itsadmin   796  0.1  2.2 465460 45316 ?        Sl   14:56   0:00 kded5 [kdeinit5]
+itsadmin   802  0.0  1.8 301896 38768 ?        Sl   14:56   0:00 /usr/bin/kaccess
+itsadmin   813  0.0  0.3  46476  6552 ?        S    14:56   0:00 kwrapper5 /usr/bin/ksmserver
+itsadmin   815  0.0  1.8 300408 38332 ?        Sl   14:56   0:00 /usr/bin/kglobalaccel5
+itsadmin   816  0.0  2.1 380648 43584 ?        Sl   14:56   0:00 /usr/bin/ksmserver
+itsadmin   825  0.0  0.2 159208  5152 ?        Sl   14:56   0:00 /usr/lib/dconf/dconf-service
+itsadmin   832  0.0  0.9 238360 18780 ?        Sl   14:56   0:00 /usr/lib/x86_64-linux-gnu/libexec/kf5/kscreen_backend_launcher
+itsadmin   833  2.7  7.0 2814168 145068 ?      Sl   14:56   0:15 /usr/bin/kwin_x11 -session 10149ddd8d1000160018052800000006400005_1605623723_996853
+itsadmin   839  0.1  4.7 510264 96224 ?        Sl   14:56   0:01 /usr/bin/krunner
+itsadmin   841  1.6 10.4 1032440 212668 ?      Sl   14:56   0:09 /usr/bin/plasmashell
+itsadmin   847  0.0  2.0 455012 41736 ?        Sl   14:56   0:00 /usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1
+itsadmin   849  0.0  1.0 246892 20592 ?        Sl   14:56   0:00 /usr/bin/xembedsniproxy
+itsadmin   852  0.0  1.0 245996 21764 ?        Sl   14:56   0:00 /usr/bin/gmenudbusmenuproxy
+itsadmin   862  0.0  0.4 442360  9452 ?        S<sl 14:56   0:00 /usr/bin/pulseaudio --daemonize=no
+itsadmin   865  0.0  1.9 431644 39388 ?        Sl   14:56   0:00 /usr/lib/x86_64-linux-gnu/libexec/org_kde_powerdevil -session 10149ddd8d1000160018052800000006400009_1605623723_985101
+rtkit      867  0.0  0.1 152648  2848 ?        SNsl 14:56   0:00 /usr/lib/rtkit/rtkit-daemon
+itsadmin   881  0.0  0.3 312548  6444 ?        Sl   14:56   0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately
+itsadmin   887  0.0  0.3 311336  7108 ?        Sl   14:56   0:00 /usr/lib/geoclue-2.0/demos/agent
+itsadmin   898  0.0  0.1   8556  3616 ?        S    14:56   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+itsadmin   913  0.0  1.6 555916 33760 ?        Sl   14:56   0:00 /usr/bin/kactivitymanagerd start-daemon
+itsadmin   930  0.0  0.3 174072  7388 ?        Sl   14:56   0:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+itsadmin   939  0.0  0.3  44340  7548 ?        Ss   14:56   0:00 /usr/lib/bluetooth/obexd
+itsadmin   947  0.0  0.9 115784 18700 ?        S    14:57   0:00 file.so [kdeinit5] file local:/run/user/1000/klauncherjYePIe.1.slave-socket local:/run/user/1000/kio_desktopguZGbu.1.slave-s
+root       949  1.5  1.7 435352 35340 ?        Ssl  14:57   0:08 /usr/lib/packagekit/packagekitd
+itsadmin   957  0.0  1.8 301944 38812 ?        Sl   14:57   0:00 /usr/bin/kuiserver5
+itsadmin   968  1.0  4.6 419736 94076 ?        Sl   14:57   0:05 /usr/bin/konsole
+itsadmin   972  0.0  0.1   6992  3708 pts/1    Ss   14:57   0:00 /bin/bash
+itsadmin   976  0.0  0.1   5556  2324 pts/1    S+   14:57   0:00 script praktikum-04.log
+itsadmin   977  0.0  0.1   6992  3764 pts/2    Ss   14:57   0:00 bash -i
+itsadmin   979  0.0  0.9 115700 18616 ?        S    14:57   0:00 file.so [kdeinit5] file local:/run/user/1000/klauncherjYePIe.1.slave-socket local:/run/user/1000/kded5WjhihL.1.slave-socket
+root      1631  0.0  0.0      0     0 ?        I    15:01   0:00 [kworker/0:1-ata_sff]
+root      1634  0.0  0.0      0     0 ?        I    15:01   0:00 [kworker/u2:0-events_unbound]
+itsadmin  1934  0.0  0.1  10632  3144 pts/2    R+   15:06   0:00 ps aux
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ pstree
+bash: pstree: Kommando nicht gefunden.
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo pstree
+sudo: pstree: Befehl nicht gefunden
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo apt-get install psmisc
+Paketlisten werden gelesen... 0%Paketlisten werden gelesen... 100%Paketlisten werden gelesen... Fertig
+Abhängigkeitsbaum wird aufgebaut.... 0%Abhängigkeitsbaum wird aufgebaut.... 0%Abhängigkeitsbaum wird aufgebaut.... 50%Abhängigkeitsbaum wird aufgebaut.... 50%Abhängigkeitsbaum wird aufgebaut.       
+Statusinformationen werden eingelesen.... 0%Statusinformationen werden eingelesen.... 0%Statusinformationen werden eingelesen.... Fertig
+Das folgende Paket wurde automatisch installiert und wird nicht mehr benötigt:
+  linux-image-4.19.0-10-amd64
+Verwenden Sie »sudo apt autoremove«, um es zu entfernen.
+Die folgenden NEUEN Pakete werden installiert:
+  psmisc
+0 aktualisiert, 1 neu installiert, 0 zu entfernen und 13 nicht aktualisiert.
+Es müssen 126 kB an Archiven heruntergeladen werden.
+Nach dieser Operation werden 652 kB Plattenplatz zusätzlich benutzt.
+0% [Wird verarbeitet]                     Holen:1 http://ftp.de.debian.org/debian buster/main amd64 psmisc amd64 23.2-1 [126 kB]
+0% [1 psmisc 0 B/126 kB 0%]                           100% [Wird verarbeitet]                       Es wurden 126 kB in 0 s geholt (476 kB/s).
+Vormals nicht ausgewähltes Paket psmisc wird gewählt.
+(Lese Datenbank ... (Lese Datenbank ... 5%(Lese Datenbank ... 10%(Lese Datenbank ... 15%(Lese Datenbank ... 20%(Lese Datenbank ... 25%(Lese Datenbank ... 30%(Lese Datenbank ... 35%(Lese Datenbank ... 40%(Lese Datenbank ... 45%(Lese Datenbank ... 50%(Lese Datenbank ... 55%(Lese Datenbank ... 60%(Lese Datenbank ... 65%(Lese Datenbank ... 70%(Lese Datenbank ... 75%(Lese Datenbank ... 80%(Lese Datenbank ... 85%(Lese Datenbank ... 90%(Lese Datenbank ... 95%(Lese Datenbank ... 100%(Lese Datenbank ... 188007 Dateien und Verzeichnisse sind derzeit installiert.)
+Vorbereitung zum Entpacken von .../psmisc_23.2-1_amd64.deb ...
+Entpacken von psmisc (23.2-1) ...
+psmisc (23.2-1) wird eingerichtet ...
+Trigger für man-db (2.8.5-2) werden verarbeitet ...
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ pstree
+systemd─┬─ModemManager───2*[{ModemManager}]
+        ├─accounts-daemon───2*[{accounts-daemon}]
+        ├─agent───2*[{agent}]
+        ├─agetty
+        ├─anacron
+        ├─at-spi-bus-laun─┬─dbus-daemon
+        │                 └─3*[{at-spi-bus-laun}]
+        ├─at-spi2-registr───2*[{at-spi2-registr}]
+        ├─avahi-daemon───avahi-daemon
+        ├─cron
+        ├─dbus-daemon
+        ├─dhclient
+        ├─gmenudbusmenupr───2*[{gmenudbusmenupr}]
+        ├─haveged
+        ├─kdeinit5─┬─2*[file.so]
+        │          ├─kaccess───2*[{kaccess}]
+        │          ├─kded5───3*[{kded5}]
+        │          ├─klauncher───2*[{klauncher}]
+        │          ├─ksmserver─┬─kwin_x11───4*[{kwin_x11}]
+        │          │           └─2*[{ksmserver}]
+        │          └─org_kde_powerde───4*[{org_kde_powerde}]
+        ├─krunner───3*[{krunner}]
+        ├─kwalletd5───2*[{kwalletd5}]
+        ├─packagekitd───3*[{packagekitd}]
+        ├─plasmashell─┬─konsole─┬─bash───script───bash───pstree
+        │             │         └─2*[{konsole}]
+        │             └─4*[{plasmashell}]
+        ├─polkit-kde-auth───4*[{polkit-kde-auth}]
+        ├─polkitd───2*[{polkitd}]
+        ├─rsyslogd───3*[{rsyslogd}]
+        ├─rtkit-daemon───2*[{rtkit-daemon}]
+        ├─sddm─┬─Xorg───{Xorg}
+        │      ├─sddm-helper───startkde─┬─kwrapper5
+        │      │                        └─ssh-agent
+        │      └─{sddm}
+        ├─sshd
+        ├─start_kdeinit
+        ├─systemd─┬─(sd-pam)
+        │         ├─dbus-daemon
+        │         ├─dconf-service───2*[{dconf-service}]
+        │         ├─kactivitymanage───5*[{kactivitymanage}]
+        │         ├─kglobalaccel5───2*[{kglobalaccel5}]
+        │         ├─kscreen_backend───2*[{kscreen_backend}]
+        │         ├─kuiserver5───2*[{kuiserver5}]
+        │         ├─obexd
+        │         └─pulseaudio───{pulseaudio}
+        ├─systemd-journal
+        ├─systemd-logind
+        ├─systemd-timesyn───{systemd-timesyn}
+        ├─systemd-udevd
+        ├─udisksd───4*[{udisksd}]
+        ├─unattended-upgr───{unattended-upgr}
+        ├─upowerd───2*[{upowerd}]
+        ├─wpa_supplicant
+        └─xembedsniproxy───2*[{xembedsniproxy}]
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ python
+Python 2.7.16 (default, Oct 10 2019, 22:02:15) 
+[GCC 8.3.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> [K>>> Beendet
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ [K]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ nano endless_date.sh
+[?1049h[22;0;0t[1;46r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[44;88H(B[0;7m[ Neue Datei ](B[m[H(B[0;7m  GNU nano 3.2                                                                          endless_date.sh                                                                                      [1;188H(B[m[45d(B[0;7m^G(B[m Hilfe[45;18H(B[0;7m^O(B[m Speichern     (B[0;7m^W(B[m Wo ist[45;52H(B[0;7m^K(B[m Ausschneiden  (B[0;7m^J(B[m Ausrichten    (B[0;7m^C(B[m Cursor[45;103H(B[0;7mM-U(B[m Rückgängig   (B[0;7mM-A(B[m Text markiere(B[0;7mM-](B[m Zu Klammer   (B[0;7mM-Q(B[m Vorige[171G(B[0;7m^B(B[m Zurück[46d(B[0;7m^X(B[m Beenden[18G(B[0;7m^R(B[m Datei öffnen  (B[0;7m^\(B[m Ersetzen[52G(B[0;7m^U(B[m Ausschn. r    (B[0;7m^T(B[m Rechtschr.    (B[0;7m^_(B[m Zu Zeile[103G(B[0;7mM-E(B[m Wiederholen  (B[0;7mM-6(B[m Kopieren     (B[0;7m^Q(B[m Wo war[46;154H(B[0;7mM-W(B[m Nächste[171G(B[0;7m^F(B[m Vorwärts[44d[3d[39;49m(B[m[?12l[?25h[?25l[1;179H(B[0;7mVerändert(B[m[3d[36m#[39m(B[m[?12l[?25h[?25l[36m![39m(B[m[?12l[?25h[?25l[36m/[39m(B[m[?12l[?25h[?25l[36mb[39m(B[m[?12l[?25h[?25l[36mi[39m(B[m[?12l[?25h[?25l[36mn[39m(B[m[?12l[?25h[?25l[36m/[39m(B[m[?12l[?25h[?25l[36mb[39m(B[m[?12l[?25h[?25l[36ma[39m(B[m[?12l[?25h[?25l[36ms[39m(B[m[?12l[?25h[?25l[36mh[39m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25lw[?12l[?25h[?25lh[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25l[32mwhile[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l t[?12l[?25h[?25lr[?12l[?25h[?25lu[?12l[?25h[?25le[?12l[?25h[?25l[32m;[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l d[44d[K[5;14H[?12l[?25h[?25l[32mdo[39m(B[m[?12l[?25h[?25l[6d[?12l[?25h[?25l[8G[42m[1K [49m(B[m[?12l[?25h[?25l[1K e[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l d[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25l[7d[?12l[?25h[?25l[8G[42m[1K [49m(B[m[?12l[?25h[?25l[1K s[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25le[?12l[?25h[?25lp[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l 6[?12l[?25h[?25l0[?12l[?25h[?25l[8d[?12l[?25h[?25ld[?12l[?25h[?25l[32mdo[39m(B[m[?12l[?25h[?25ldon[?12l[?25h[?25l[32mdone[39m(B[m[?12l[?25h[?25l[1;188H[1;179H(B[0;7m         (B[m[44;83H(B[0;7m[ 6 Zeilen geschrieben ](B[m[8;5H[?12l[?25h[?25l[44d[J[46;189H[?12l[?25h[46;1H[?1049l[23;0;0t[?1l>]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ nano endless_date.sh
+[?1049h[22;0;0t[1;46r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[44;84H(B[0;7m[ Datei wird gelesen ](B[m[44;84H (B[0;7m[ 6 Zeilen(B[m[1P[44;105H[H(B[0;7m  GNU nano 3.2                                                                          endless_date.sh                                                                                      [1;188H(B[m[45d(B[0;7m^G(B[m Hilfe[45;18H(B[0;7m^O(B[m Speichern     (B[0;7m^W(B[m Wo ist[45;52H(B[0;7m^K(B[m Ausschneiden  (B[0;7m^J(B[m Ausrichten    (B[0;7m^C(B[m Cursor[45;103H(B[0;7mM-U(B[m Rückgängig   (B[0;7mM-A(B[m Text markiere(B[0;7mM-](B[m Zu Klammer   (B[0;7mM-Q(B[m Vorige[171G(B[0;7m^B(B[m Zurück[46d(B[0;7m^X(B[m Beenden[18G(B[0;7m^R(B[m Datei öffnen  (B[0;7m^\(B[m Ersetzen[52G(B[0;7m^U(B[m Ausschn. r    (B[0;7m^T(B[m Rechtschr.    (B[0;7m^_(B[m Zu Zeile[103G(B[0;7mM-E(B[m Wiederholen  (B[0;7mM-6(B[m Kopieren     (B[0;7m^Q(B[m Wo war[46;154H(B[0;7mM-W(B[m Nächste[171G(B[0;7m^F(B[m Vorwärts[44d[3d[39;49m[36m#!/bin/bash[5d[32mwhile[39m(B[m true[32m;[39m(B[m [32mdo[6;9H(B[0;1m[34mecho[39m(B[m date[7;9Hsleep 60[8d[32mdone[3d[39m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[1;179H(B[0;7mVerändert(B[m[4;43r[4;1HM[1;46r[5;1H[?12l[?25h[?25l[A[?12l[?25h[?25l7[4;43r8M[1;46r[5;1H[?12l[?25h[?25ls[?12l[?25h[?25li[?12l[?25h[?25lg[?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25ll[?12l[?25h[?25l_[?12l[?25h[?25lh[?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l[32m([39m(B[m[?12l[?25h[?25l(B[0;1m[32msignal_handler(B[0m[32m()[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m{[39m(B[m[?12l[?25h[?25l7[6;43r8[6dM[1;46r[6;1H[?12l[?25h[?25l[8G[42m[1K [49m(B[m[?12l[?25h[?25l[1K e[?12l[?25h[?25lc[44d[K[6;11H[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25lD[?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25lk[?12l[?25h[?25le[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l f[?12l[?25h[?25lu[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l d[?12l[?25h[?25la[?12l[?25h[?25ls[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l D[?12l[?25h[?25lr[?12l[?25h[?25lu[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lk[?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l v[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l S[?12l[?25h[?25lT[?12l[?25h[?25lR[?12l[?25h[?25lG[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l +[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l C[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[32m![39m(B[m[?12l[?25h[?25l[6;14H(B[0;1m[33m"Danke fuer das Druecken von STRG + C!"[39m(B[m[?12l[?25h[?25l7[7;44r8[7dM[1;46r[7;1H[?12l[?25h[?25l[8G[42m[1K [49m(B[m[?12l[?25h[?25l[1K e[?12l[?25h[?25lx[?12l[?25h[?25li[?12l[?25h[?25l[32mexit[39m(B[m[?12l[?25h[?25l7[8;44r8[8dM[1;46r[8;1H[?12l[?25h[?25l[32m}[39m(B[m[?12l[?25h[?25l7[9;44r8[9dM[1;46r[9;1H[?12l[?25h[?25l7[9;44r8M[1;46r[10;1H[?12l[?25h[?25lt[?12l[?25h[?25lr[?12l[?25h[?25la[?12l[?25h[?25lp[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l s[?12l[?25h[?25li[?12l[?25h[?25lg[?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25ll[?12l[?25h[?25l_[?12l[?25h[?25lh[?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l S[?12l[?25h[?25lI[?12l[?25h[?25lG[?12l[?25h[?25lT[?12l[?25h[?25lE[?12l[?25h[?25lR[?12l[?25h[?25lM[?12l[?25h[?25l[1;188H[1;179H(B[0;7m         (B[m[44;83H(B[0;7m[ 13 Zeilen geschrieben ](B[m[10;28H[?12l[?25h[?25l[44d[J[46;189H[?12l[?25h[46;1H[?1049l[23;0;0t[?1l>]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ chmod +x endless_date.sh 
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ./endless_date.sh 
+date
+^C
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ./endless_date.sh [7@chmod +x [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pnano endless_date.sh
+[?1049h[22;0;0t[1;46r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[44;84H(B[0;7m[ Datei wird gelesen ](B[m[44;84H (B[0;7m[ 13 Zeilen[44;106H(B[m[H(B[0;7m  GNU nano 3.2                                                                          endless_date.sh                                                                                      [1;188H(B[m[45d(B[0;7m^G(B[m Hilfe[45;18H(B[0;7m^O(B[m Speichern     (B[0;7m^W(B[m Wo ist[45;52H(B[0;7m^K(B[m Ausschneiden  (B[0;7m^J(B[m Ausrichten    (B[0;7m^C(B[m Cursor[45;103H(B[0;7mM-U(B[m Rückgängig   (B[0;7mM-A(B[m Text markiere(B[0;7mM-](B[m Zu Klammer   (B[0;7mM-Q(B[m Vorige[171G(B[0;7m^B(B[m Zurück[46d(B[0;7m^X(B[m Beenden[18G(B[0;7m^R(B[m Datei öffnen  (B[0;7m^\(B[m Ersetzen[52G(B[0;7m^U(B[m Ausschn. r    (B[0;7m^T(B[m Rechtschr.    (B[0;7m^_(B[m Zu Zeile[103G(B[0;7mM-E(B[m Wiederholen  (B[0;7mM-6(B[m Kopieren     (B[0;7m^Q(B[m Wo war[46;154H(B[0;7mM-W(B[m Nächste[171G(B[0;7m^F(B[m Vorwärts[44d[3d[39;49m[36m#!/bin/bash[5d(B[0;1m[32msignal_handler(B[0m[32m()[39m(B[m [32m{[6;9H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Danke fuer das Druecken von STRG + C!"[7;9H(B[0m[32mexit[8d}[10d[39m(B[mtrap signal_handler SIGTERM[12d[32mwhile[39m(B[m true[32m;[39m(B[m [32mdo[13;9H(B[0;1m[34mecho[39m(B[m date[14;9Hsleep 60[15d[32mdone[3d[39m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[13;18H[?12l[?25h[?25l[1;179H(B[0;7mVerändert(B[m[13;18H[32m([39m(B[m[?12l[?25h[?25l[32m)[39m(B[m[?12l[?25h[?25l[12;15H[?12l[?25h[?25l[A[?12l[?25h[?25l[10;20H[?12l[?25h[?25l[A[?12l[?25h[?25l[10;20H[?12l[?25h[?25l [?12l[?25h[?25lS[?12l[?25h[?25lI[?12l[?25h[?25lG[?12l[?25h[?25lT[?12l[?25h[?25lE[?12l[?25h[?25lR[?12l[?25h[?25l[44d[K[10;28H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lI[?12l[?25h[?25lN[?12l[?25h[?25lT[?12l[?25h[?25l[1;188H[1;179H(B[0;7m         (B[m[44;83H(B[0;7m[ 13 Zeilen geschrieben ](B[m[10;27H[?12l[?25h[?25l[44d[J[46;189H[?12l[?25h[46;1H[?1049l[23;0;0t[?1l>]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ nano endless_date.sh[2P./endless_date.sh 
+./endless_date.sh: Zeile 11: Syntaxfehler beim unerwarteten Wort `('
+./endless_date.sh: Zeile 11: `	echo date()'
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ./endless_date.sh nano endless_date.sh
+[?1049h[22;0;0t[1;46r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[44;84H(B[0;7m[ Datei wird gelesen ](B[m[44;84H (B[0;7m[ 13 Zeilen[44;106H(B[m[H(B[0;7m  GNU nano 3.2                                                                          endless_date.sh                                                                                      [1;188H(B[m[45d(B[0;7m^G(B[m Hilfe[45;18H(B[0;7m^O(B[m Speichern     (B[0;7m^W(B[m Wo ist[45;52H(B[0;7m^K(B[m Ausschneiden  (B[0;7m^J(B[m Ausrichten    (B[0;7m^C(B[m Cursor[45;103H(B[0;7mM-U(B[m Rückgängig   (B[0;7mM-A(B[m Text markiere(B[0;7mM-](B[m Zu Klammer   (B[0;7mM-Q(B[m Vorige[171G(B[0;7m^B(B[m Zurück[46d(B[0;7m^X(B[m Beenden[18G(B[0;7m^R(B[m Datei öffnen  (B[0;7m^\(B[m Ersetzen[52G(B[0;7m^U(B[m Ausschn. r    (B[0;7m^T(B[m Rechtschr.    (B[0;7m^_(B[m Zu Zeile[103G(B[0;7mM-E(B[m Wiederholen  (B[0;7mM-6(B[m Kopieren     (B[0;7m^Q(B[m Wo war[46;154H(B[0;7mM-W(B[m Nächste[171G(B[0;7m^F(B[m Vorwärts[44d[3d[39;49m[36m#!/bin/bash[5d(B[0;1m[32msignal_handler(B[0m[32m()[39m(B[m [32m{[6;9H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Danke fuer das Druecken von STRG + C!"[7;9H(B[0m[32mexit[8d}[10d[39m(B[mtrap signal_handler SIGINT[12d[32mwhile[39m(B[m true[32m;[39m(B[m [32mdo[13;9H(B[0;1m[34mecho[39m(B[m date[32m()[14;9H[39m(B[msleep 60[15d[32mdone[3d[39m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[13;9H[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25ld[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[1;179H(B[0;7mVerändert(B[m[13;19H [?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l[44d[K[13;16H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[9Gechodate[K[?12l[?25h[?25ldate[K[?12l[?25h[?25ldate[K[?12l[?25h[?25ldate[K[?12l[?25h[?25ldate[K[?12l[?25h[?25l[1;188H[1;179H(B[0;7m         (B[m[44;83H(B[0;7m[ 13 Zeilen geschrieben ](B[m[13;9H[?12l[?25h[?25l[44d[J[46;189H[?12l[?25h[46;1H[?1049l[23;0;0t[?1l>]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ date
+Di 1. Jun 15:13:06 CEST 2021
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ clear
+[H[2J[3J]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ clear[1Pdatenano endless_date.sh[2P./endless_date.sh 
+Di 1. Jun 15:13:10 CEST 2021
+^CDanke fuer das Druecken von STRG + C!
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ n[Knano child_one.sh
+[?1049h[22;0;0t[1;46r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[44;88H(B[0;7m[ Neue Datei ](B[m[H(B[0;7m  GNU nano 3.2                                                                            child_one.sh                                                                                       [1;188H(B[m[45d(B[0;7m^G(B[m Hilfe[45;18H(B[0;7m^O(B[m Speichern     (B[0;7m^W(B[m Wo ist[45;52H(B[0;7m^K(B[m Ausschneiden  (B[0;7m^J(B[m Ausrichten    (B[0;7m^C(B[m Cursor[45;103H(B[0;7mM-U(B[m Rückgängig   (B[0;7mM-A(B[m Text markiere(B[0;7mM-](B[m Zu Klammer   (B[0;7mM-Q(B[m Vorige[171G(B[0;7m^B(B[m Zurück[46d(B[0;7m^X(B[m Beenden[18G(B[0;7m^R(B[m Datei öffnen  (B[0;7m^\(B[m Ersetzen[52G(B[0;7m^U(B[m Ausschn. r    (B[0;7m^T(B[m Rechtschr.    (B[0;7m^_(B[m Zu Zeile[103G(B[0;7mM-E(B[m Wiederholen  (B[0;7mM-6(B[m Kopieren     (B[0;7m^Q(B[m Wo war[46;154H(B[0;7mM-W(B[m Nächste[171G(B[0;7m^F(B[m Vorwärts[44d[3d[39;49m(B[m[?12l[?25h[?25l[1;179H(B[0;7mVerändert(B[m[3d[36m#[39m(B[m[?12l[?25h[?25l[36m![39m(B[m[?12l[?25h[?25l[36m/[39m(B[m[?12l[?25h[?25l[36mb[39m(B[m[?12l[?25h[?25l[36mi[39m(B[m[?12l[?25h[?25l[36mn[39m(B[m[?12l[?25h[?25l[36m/[39m(B[m[?12l[?25h[?25l[36mb[39m(B[m[?12l[?25h[?25l[36ma[39m(B[m[?12l[?25h[?25l[36ms[39m(B[m[?12l[?25h[?25l[36mh[39m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25lw[?12l[?25h[?25l[K[?12l[?25h[?25l[5d[?12l[?25h[?25lw[?12l[?25h[?25lh[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25l[32mwhile[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l t[?12l[?25h[?25lr[?12l[?25h[?25lu[?12l[?25h[?25le[?12l[?25h[?25l[32m:[44d[39m(B[m[K[5;12H[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lu[?12l[?25h[?25le[?12l[?25h[?25l[32m;[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l d[?12l[?25h[?25l[32mdo[39m(B[m[?12l[?25h[?25l[6d[?12l[?25h[?25l[8G[42m[1K [49m(B[m[?12l[?25h[?25l[1K s[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25le[?12l[?25h[?25lp[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l 5[?12l[?25h[?25l[7d[?12l[?25h[?25ld[?12l[?25h[?25l[32mdo[39m(B[m[?12l[?25h[?25ldon[?12l[?25h[?25l[32mdone[39m(B[m[?12l[?25h[?25l[A[?12l[?25h[?25l[5;5H[?12l[?25h[?25l[A[?12l[?25h[?25l7[4;44r8M[1;46r[5;1H[?12l[?25h[?25l[A[?12l[?25h[?25l7[4;44r8M[1;46r[5;1H[?12l[?25h[?25ls[?12l[?25h[?25li[?12l[?25h[?25lg[?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25ll[?12l[?25h[?25l_[?12l[?25h[?25lh[?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l[32m([39m(B[m[?12l[?25h[?25l(B[0;1m[32msignal_handler(B[0m[32m()[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m{[39m(B[m[?12l[?25h[?25l7[6;44r8[6dM[1;46r[6;1H[?12l[?25h[?25l7[6;44r8M[1;46r[7;1H[?12l[?25h[?25l[32m}[39m(B[m[?12l[?25h[?25l[A[?12l[?25h[?25l[8G[42m[1K [49m(B[m[?12l[?25h[?25l[1K e[?12l[?25h[?25lx[?12l[?25h[?25li[?12l[?25h[?25l[32mexit[39m(B[m[?12l[?25h[?25l[7;2H[?12l[?25h[?25l7[8;44r8[8dM[1;46r[8;1H[?12l[?25h[?25l7[8;44r8M[1;46r[9;1H[?12l[?25h[?25lt[?12l[?25h[?25lr[?12l[?25h[?25la[?12l[?25h[?25lp[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l s[?12l[?25h[?25li[?12l[?25h[?25lg[?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25ll[?12l[?25h[?25l_[?12l[?25h[?25lh[?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l S[?12l[?25h[?25lI[?12l[?25h[?25lG[?12l[?25h[?25lT[?12l[?25h[?25lE[?12l[?25h[?25lR[?12l[?25h[?25lN[?12l[?25h[?25l [?12l[?25h[?25lM[?12l[?25h[?25l[1;188H[1;179H(B[0;7m         (B[m[44;83H(B[0;7m[ 11 Zeilen geschrieben ](B[m[9;28H[?12l[?25h[?25l[44;64H(B[0;7m[ Zeile 7/12 (58%), Spalte 28/28 (100%), Zeichen 68/99 (68%) ](B[m[9;28H[?12l[?25h[?25l[44d[J[46;189H[?12l[?25h[46;1H[?1049l[23;0;0t[?1l>]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ cat child_one.sh 
+#!/bin/bash
+
+signal_handler() {
+	exit
+}
+
+trap signal_handler SIGTERM
+
+while true; do
+	sleep 5
+done
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ cp chile[Kd_one.sh[K[K[K[K[K[K[K[K[K[K[K[K[K[Khmod ü[K+x child_one.sh 
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ co[Kp child_one.sh child_two.sh
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ cat child_two.sh 
+#!/bin/bash
+
+signal_handler() {
+	exit
+}
+
+trap signal_handler SIGTERM
+
+while true; do
+	sleep 5
+done
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ clear
+[H[2J[3J]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ cp child_one.sh parent.sh
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ nano parent.sh 
+[?1049h[22;0;0t[1;46r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[44;84H(B[0;7m[ Datei wird gelesen ](B[m[44;84H (B[0;7m[ 11 Zeilen[44;106H(B[m[H(B[0;7m  GNU nano 3.2                                                                             parent.sh                                                                                         [1;188H(B[m[45d(B[0;7m^G(B[m Hilfe[45;18H(B[0;7m^O(B[m Speichern     (B[0;7m^W(B[m Wo ist[45;52H(B[0;7m^K(B[m Ausschneiden  (B[0;7m^J(B[m Ausrichten    (B[0;7m^C(B[m Cursor[45;103H(B[0;7mM-U(B[m Rückgängig   (B[0;7mM-A(B[m Text markiere(B[0;7mM-](B[m Zu Klammer   (B[0;7mM-Q(B[m Vorige[171G(B[0;7m^B(B[m Zurück[46d(B[0;7m^X(B[m Beenden[18G(B[0;7m^R(B[m Datei öffnen  (B[0;7m^\(B[m Ersetzen[52G(B[0;7m^U(B[m Ausschn. r    (B[0;7m^T(B[m Rechtschr.    (B[0;7m^_(B[m Zu Zeile[103G(B[0;7mM-E(B[m Wiederholen  (B[0;7mM-6(B[m Kopieren     (B[0;7m^Q(B[m Wo war[46;154H(B[0;7mM-W(B[m Nächste[171G(B[0;7m^F(B[m Vorwärts[44d[3d[39;49m[36m#!/bin/bash[5d(B[0;1m[32msignal_handler(B[0m[32m()[39m(B[m [32m{[6;9Hexit[7d}[9d[39m(B[mtrap signal_handler SIGTERM[11d[32mwhile[39m(B[m true[32m;[39m(B[m [32mdo[12;9H[39m(B[msleep 5[13d[32mdone[3d[39m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[1;179H(B[0;7mVerändert(B[m[10;43r[10;1HM[1;46r[11;1H[?12l[?25h[?25l[A[?12l[?25h[?25l7[10;43r8M[1;46r[11;1H[?12l[?25h[?25l.[?12l[?25h[?25l/[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25ld[?12l[?25h[?25lo[?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25l.[44d[K[11;13H[?12l[?25h[?25ls[?12l[?25h[?25lh[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l_[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25l.[?12l[?25h[?25ls[?12l[?25h[?25lh[?12l[?25h[?25l7[12;44r8[12dM[1;46r[12;1H[?12l[?25h[?25l.[?12l[?25h[?25l/[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25ld[?12l[?25h[?25l_[?12l[?25h[?25lt[?12l[?25h[?25lw[?12l[?25h[?25lo[?12l[?25h[?25l.[?12l[?25h[?25ls[?12l[?25h[?25lh[?12l[?25h[?25l[A[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m&[39m(B[m[?12l[?25h[?25l[12d[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m&[39m(B[m[?12l[?25h[?25l[1;188H[1;179H(B[0;7m         (B[m[44;83H(B[0;7m[ 14 Zeilen geschrieben ](B[m[12;17H[?12l[?25h[?25l[44d[J[46;189H[?12l[?25h[46;1H[?1049l[23;0;0t[?1l>]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ls -al [K[K[Kl
+insgesamt 100
+drwxr-xr-x 2 itsadmin itsadmin  4096 Sep 15  2020 [0m[01;34mBilder[0m
+-rwxr-xr-x 1 itsadmin itsadmin    99 Jun  1 15:14 [01;32mchild_one.sh[0m
+-rwxr-xr-x 1 itsadmin itsadmin    99 Jun  1 15:15 [01;32mchild_two.sh[0m
+drwxr-xr-x 2 itsadmin itsadmin  4096 Sep 15  2020 [01;34mDokumente[0m
+drwxr-xr-x 2 itsadmin itsadmin  4096 Apr 29 13:36 [01;34mDownloads[0m
+-rwxr-xr-x 1 itsadmin itsadmin   151 Jun  1 15:13 [01;32mendless_date.sh[0m
+drwxr-xr-x 5 itsadmin itsadmin  4096 Apr 29 14:28 [01;34mlinux_practical[0m
+drwxr-xr-x 2 itsadmin itsadmin  4096 Sep 15  2020 [01;34mMusik[0m
+drwxr-xr-x 2 itsadmin itsadmin  4096 Sep 15  2020 [01;34mÖffentlich[0m
+-rwxr-xr-x 1 itsadmin itsadmin   134 Jun  1 15:16 [01;32mparent.sh[0m
+-rw-r--r-- 1 itsadmin itsadmin 45056 Jun  1 15:15 praktikum-04.log
+drwxr-xr-x 2 itsadmin itsadmin  4096 Apr 12 15:45 [01;34mSchreibtisch[0m
+drwxr-xr-x 2 itsadmin itsadmin  4096 Sep 15  2020 [01;34mVideos[0m
+drwxr-xr-x 2 itsadmin itsadmin  4096 Sep 15  2020 [01;34mVorlagen[0m
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ./parent.sh 
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ nano parent.sh 
+[?1049h[22;0;0t[1;45r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[43;84H(B[0;7m[ Datei wird gelesen ](B[m[43;84H (B[0;7m[ 14 Zeilen[43;106H(B[m[H(B[0;7m  GNU nano 3.2                                                                             parent.sh                                                                                         [1;188H(B[m[44d(B[0;7m^G(B[m Hilfe[44;18H(B[0;7m^O(B[m Speichern     (B[0;7m^W(B[m Wo ist[44;52H(B[0;7m^K(B[m Ausschneiden  (B[0;7m^J(B[m Ausrichten    (B[0;7m^C(B[m Cursor[44;103H(B[0;7mM-U(B[m Rückgängig   (B[0;7mM-A(B[m Text markiere(B[0;7mM-](B[m Zu Klammer   (B[0;7mM-Q(B[m Vorige[171G(B[0;7m^B(B[m Zurück[45d(B[0;7m^X(B[m Beenden[18G(B[0;7m^R(B[m Datei öffnen  (B[0;7m^\(B[m Ersetzen[52G(B[0;7m^U(B[m Ausschn. r    (B[0;7m^T(B[m Rechtschr.    (B[0;7m^_(B[m Zu Zeile[103G(B[0;7mM-E(B[m Wiederholen  (B[0;7mM-6(B[m Kopieren     (B[0;7m^Q(B[m Wo war[45;154H(B[0;7mM-W(B[m Nächste[171G(B[0;7m^F(B[m Vorwärts[43d[3d[39;49m[36m#!/bin/bash[5d(B[0;1m[32msignal_handler(B[0m[32m()[39m(B[m [32m{[6;9Hexit[7d}[9d[39m(B[mtrap signal_handler SIGTERM[11d./child_one.sh [32m&[12d[39m(B[m./child_two.sh [32m&[14dwhile[39m(B[m true[32m;[39m(B[m [32mdo[15;9H[39m(B[msleep 5[16d[32mdone[3d[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[11;17H[?12l[?25h[?25l[1;179H(B[0;7mVerändert(B[m[11;15H[42m [49m(B[m[K[?12l[?25h[?25l [?12l[?25h[?25l[12d[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l [?12l[?25h[?25l[1;188H[1;179H(B[0;7m         (B[m[43;83H(B[0;7m[ 14 Zeilen geschrieben ](B[m[12;15H[?12l[?25h[?25l[43d[J[45;189H[?12l[?25h[45;1H[?1049l[23;0;0t[?1l>]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ nano parent.sh [3P./[C[C[C[C[C[C[C[C[C[C
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ [K]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ python -c "while True: pass" &
+[1] 2247
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ps aux | grep python
+root       552  0.0  0.9 110356 19976 ?        Ssl  14:56   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+itsadmin  2247 88.6  0.3  15064  6340 pts/2    R    15:21   0:08 python -c while True: pass
+itsadmin  2249  0.0  0.0   6220   892 pts/2    S+   15:22   0:00 grep python
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo unshare --pid --mount-proc --fork /bin/bash
+root@itsclient:/home/itsadmin# ps aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.1   6992  3624 pts/2    S    15:22   0:00 /bin/bash
+root         2  0.0  0.1  10632  3112 pts/2    R+   15:22   0:00 ps aux
+root@itsclient:/home/itsadmin# exit
+exit
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ pkill python
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2021-06-01 15:23:32+02:00 [COMMAND_EXIT_CODE="0"]
