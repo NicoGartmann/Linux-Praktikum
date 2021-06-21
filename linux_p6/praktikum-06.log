@@ -1,0 +1,420 @@
+Script started on 2021-06-21 13:00:14+02:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="189" LINES="46"]
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo apt-get update
+0% [Wird verarbeitet]                     OK:1 http://security.debian.org/debian-security buster/updates InRelease
+0% [Verbindung mit ftp.de.debian.org (141.76.2.4)]                                                  OK:2 http://ftp.de.debian.org/debian buster InRelease
+                                                  0% [Warten auf Kopfzeilen]                          OK:3 http://ftp.de.debian.org/debian buster-updates InRelease
+                          0% [Wird verarbeitet]0% [Wird verarbeitet]0% [Wird verarbeitet]20% [Wird verarbeitet]                      Paketlisten werden gelesen... 0%Paketlisten werden gelesen... 0%Paketlisten werden gelesen... 0%Paketlisten werden gelesen... 52%Paketlisten werden gelesen... 52%Paketlisten werden gelesen... 52%Paketlisten werden gelesen... 52%Paketlisten werden gelesen... 60%Paketlisten werden gelesen... 60%Paketlisten werden gelesen... 61%Paketlisten werden gelesen... 95%Paketlisten werden gelesen... 95%Paketlisten werden gelesen... 97%Paketlisten werden gelesen... 97%Paketlisten werden gelesen... 98%Paketlisten werden gelesen... 98%Paketlisten werden gelesen... 98%Paketlisten werden gelesen... 98%Paketlisten werden gelesen... 98%Paketlisten werden gelesen... 98%Paketlisten werden gelesen... Fertig
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo apt-get install -y btrfs-progs
+Paketlisten werden gelesen... 0%Paketlisten werden gelesen... 100%Paketlisten werden gelesen... Fertig
+Abhängigkeitsbaum wird aufgebaut.... 0%Abhängigkeitsbaum wird aufgebaut.... 0%Abhängigkeitsbaum wird aufgebaut.... 50%Abhängigkeitsbaum wird aufgebaut.... 50%Abhängigkeitsbaum wird aufgebaut.       
+Statusinformationen werden eingelesen.... 0%Statusinformationen werden eingelesen.... 0%Statusinformationen werden eingelesen.... Fertig
+Die folgenden zusätzlichen Pakete werden installiert:
+  liblzo2-2
+Vorgeschlagene Pakete:
+  duperemove
+Die folgenden NEUEN Pakete werden installiert:
+  btrfs-progs liblzo2-2
+0 aktualisiert, 2 neu installiert, 0 zu entfernen und 123 nicht aktualisiert.
+Es müssen 658 kB an Archiven heruntergeladen werden.
+Nach dieser Operation werden 3.558 kB Plattenplatz zusätzlich benutzt.
+0% [Wird verarbeitet]                     Holen:1 http://ftp.de.debian.org/debian buster/main amd64 liblzo2-2 amd64 2.10-0.1 [56,1 kB]
+0% [1 liblzo2-2 0 B/56,1 kB 0%]                               17% [Wird verarbeitet]                      Holen:2 http://ftp.de.debian.org/debian buster/main amd64 btrfs-progs amd64 4.20.1-2 [602 kB]
+18% [2 btrfs-progs 6.647 B/602 kB 1%]                                     100% [Wird verarbeitet]                       Es wurden 658 kB in 0 s geholt (1.788 kB/s).
+Vormals nicht ausgewähltes Paket liblzo2-2:amd64 wird gewählt.
+(Lese Datenbank ... (Lese Datenbank ... 5%(Lese Datenbank ... 10%(Lese Datenbank ... 15%(Lese Datenbank ... 20%(Lese Datenbank ... 25%(Lese Datenbank ... 30%(Lese Datenbank ... 35%(Lese Datenbank ... 40%(Lese Datenbank ... 45%(Lese Datenbank ... 50%(Lese Datenbank ... 55%(Lese Datenbank ... 60%(Lese Datenbank ... 65%(Lese Datenbank ... 70%(Lese Datenbank ... 75%(Lese Datenbank ... 80%(Lese Datenbank ... 85%(Lese Datenbank ... 90%(Lese Datenbank ... 95%(Lese Datenbank ... 100%(Lese Datenbank ... 158649 Dateien und Verzeichnisse sind derzeit installiert.)
+Vorbereitung zum Entpacken von .../liblzo2-2_2.10-0.1_amd64.deb ...
+Entpacken von liblzo2-2:amd64 (2.10-0.1) ...
+Vormals nicht ausgewähltes Paket btrfs-progs wird gewählt.
+Vorbereitung zum Entpacken von .../btrfs-progs_4.20.1-2_amd64.deb ...
+Entpacken von btrfs-progs (4.20.1-2) ...
+liblzo2-2:amd64 (2.10-0.1) wird eingerichtet ...
+btrfs-progs (4.20.1-2) wird eingerichtet ...
+Trigger für man-db (2.8.5-2) werden verarbeitet ...
+Trigger für initramfs-tools (0.133+deb10u1) werden verarbeitet ...
+update-initramfs: Generating /boot/initrd.img-4.19.0-12-amd64
+Trigger für libc-bin (2.28-10) werden verarbeitet ...
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo mkfs.btz[K[Ktrfs /dev/sdb/[K /dev/sdc
+btrfs-progs v4.20.1 
+See http://btrfs.wiki.kernel.org for more information.
+
+Label:              (null)
+UUID:               455f5e71-33aa-45c3-86a7-c58dc163a05d
+Node size:          16384
+Sector size:        4096
+Filesystem size:    20.00GiB
+Block group profiles:
+  Data:             RAID0             2.00GiB
+  Metadata:         RAID1             1.00GiB
+  System:           RAID1             8.00MiB
+SSD detected:       no
+Incompat features:  extref, skinny-metadata
+Number of devices:  2
+Devices:
+   ID        SIZE  PATH
+    1    10.00GiB  /dev/sdb
+    2    10.00GiB  /dev/sdc
+
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo btrfs filesystem show /dev/sdb
+Label: none  uuid: 455f5e71-33aa-45c3-86a7-c58dc163a05d
+	Total devices 2 FS bytes used 128.00KiB
+	devid    1 size 10.00GiB used 2.01GiB path /dev/sdb
+	devid    2 size 10.00GiB used 2.01GiB path /dev/sdc
+
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo btrfs filesystem show /dev/sdb[Kc
+Label: none  uuid: 455f5e71-33aa-45c3-86a7-c58dc163a05d
+	Total devices 2 FS bytes used 128.00KiB
+	devid    1 size 10.00GiB used 2.01GiB path /dev/sdb
+	devid    2 size 10.00GiB used 2.01GiB path /dev/sdc
+
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sud [Ko mdir [K[K[K[Kkdir /mnt/prakt
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ soud[K[Kdo [K[K[K[Kudo mount -t t[Kbtrfs /dev/sdc /mnt/prakt
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ mout [K[K[Knt[K[K[Kount | grep g[Kbtrfs
+/dev/sdb on /mnt/prakt type btrfs (rw,relatime,space_cache,subvolid=5,subvol=/)
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ btf[Krfs filesystem df /mnt/prakt
+Data, RAID0: total=2.00GiB, used=0.00B
+System, RAID1: total=8.00MiB, used=16.00KiB
+Metadata, RAID1: total=1.00GiB, used=112.00KiB
+GlobalReserve, single: total=16.00MiB, used=0.00B
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sud [Ko btrfs devide add /dev/sdd /mnt/prakt
+btrfs: unknown token 'devide'
+usage: btrfs [--help] [--version] <group> [<group>...] <command> [<args>]
+
+    btrfs subvolume create [-i <qgroupid>] [<dest>/]<name>
+        Create a subvolume
+    btrfs subvolume delete [options] <subvolume> [<subvolume>...]
+        Delete subvolume(s)
+    btrfs subvolume list [options] <path>
+        List subvolumes and snapshots in the filesystem.
+    btrfs subvolume snapshot [-r] [-i <qgroupid>] <source> <dest>|[<dest>/]<name>
+        Create a snapshot of the subvolume
+    btrfs subvolume get-default <path>
+        Get the default subvolume of a filesystem
+    btrfs subvolume set-default <subvolume>
+    btrfs subvolume set-default <subvolid> <path>
+        Set the default subvolume of the filesystem mounted as default.
+    btrfs subvolume find-new <path> <lastgen>
+        List the recently modified files in a filesystem
+    btrfs subvolume show [options] <path>
+        Show more information about the subvolume (UUIDs, generations, times, snapshots)
+    btrfs subvolume sync <path> [<subvol-id>...]
+        Wait until given subvolume(s) are completely removed from the filesystem.
+
+    btrfs filesystem df [options] <path>
+        Show space usage information for a mount point
+    btrfs filesystem du [options] <path> [<path>..]
+        Summarize disk usage of each file.
+    btrfs filesystem show [options] [<path>|<uuid>|<device>|label]
+        Show the structure of a filesystem
+    btrfs filesystem sync <path>
+        Force a sync on a filesystem
+    btrfs filesystem defragment [options] <file>|<dir> [<file>|<dir>...]
+        Defragment a file or a directory
+    btrfs filesystem resize [devid:][+/-]<newsize>[kKmMgGtTpPeE]|[devid:]max <path>
+        Resize a filesystem
+    btrfs filesystem label [<device>|<mount_point>] [<newlabel>]
+        Get or change the label of a filesystem
+    btrfs filesystem usage [options] <path> [<path>..]
+        Show detailed information about internal filesystem usage .
+
+    btrfs balance start [options] <path>
+        Balance chunks across the devices
+    btrfs balance pause <path>
+        Pause running balance
+    btrfs balance cancel <path>
+        Cancel running or paused balance
+    btrfs balance resume <path>
+        Resume interrupted balance
+    btrfs balance status [-v] <path>
+        Show status of running or paused balance
+
+    btrfs device add [options] <device> [<device>...] <path>
+        Add a device to a filesystem
+    btrfs device delete <device>|<devid> [<device>|<devid>...] <path>
+    btrfs device remove <device>|<devid> [<device>|<devid>...] <path>
+        Remove a device from a filesystem
+    btrfs device scan [(-d|--all-devices)|<device> [<device>...]]
+        Scan devices for a btrfs filesystem
+    btrfs device ready <device>
+        Check device to see if it has all of its devices in cache for mounting
+    btrfs device stats [options] <path>|<device>
+        Show device IO error statistics
+    btrfs device usage [options] <path> [<path>..]
+        Show detailed information about internal allocations in devices.
+
+    btrfs scrub start [-BdqrRf] [-c ioprio_class -n ioprio_classdata] <path>|<device>
+        Start a new scrub. If a scrub is already running, the new one fails.
+    btrfs scrub cancel <path>|<device>
+        Cancel a running scrub
+    btrfs scrub resume [-BdqrR] [-c ioprio_class -n ioprio_classdata] <path>|<device>
+        Resume previously canceled or interrupted scrub
+    btrfs scrub status [-dR] <path>|<device>
+        Show status of running or finished scrub
+
+    btrfs check [options] <device>
+        Check structural integrity of a filesystem (unmounted).
+
+    btrfs rescue chunk-recover [options] <device>
+        Recover the chunk tree by scanning the devices one by one.
+    btrfs rescue super-recover [options] <device>
+        Recover bad superblocks from good copies
+    btrfs rescue zero-log <device>
+        Clear the tree log. Usable if it's corrupted and prevents mount.
+    btrfs rescue fix-device-size <device>
+        Re-align device and super block sizes. Usable if newer kernel refuse to mount it due to mismatch super size
+
+    btrfs restore [options] <device> <path> | -l <device>
+        Try to restore files from a damaged filesystem (unmounted)
+
+    btrfs inspect-internal inode-resolve [-v] <inode> <path>
+        Get file system paths for the given inode
+    btrfs inspect-internal logical-resolve [-Pv] [-s bufsize] <logical> <path>
+        Get file system paths for the given logical address
+    btrfs inspect-internal subvolid-resolve <subvolid> <path>
+        Get file system paths for the given subvolume ID.
+    btrfs inspect-internal rootid <path>
+        Get tree ID of the containing subvolume of path.
+    btrfs inspect-internal min-dev-size [options] <path>
+        Get the minimum size the device can be shrunk to. The
+    btrfs inspect-internal dump-tree [options] device
+        Dump tree structures from a given device
+    btrfs inspect-internal dump-super [options] device [device...]
+        Dump superblock from a device in a textual form
+    btrfs inspect-internal tree-stats [options] <device>
+        Print various stats for trees
+
+    btrfs property get [-t <type>] <object> [<name>]
+        Gets a property from a btrfs object.
+    btrfs property set [-t <type>] <object> <name> <value>
+        Sets a property on a btrfs object.
+    btrfs property list [-t <type>] <object>
+        Lists available properties with their descriptions for the given object.
+
+    btrfs send [-ve] [-p <parent>] [-c <clone-src>] [-f <outfile>] <subvol> [<subvol>...]
+        Send the subvolume(s) to stdout.
+    btrfs receive [options] <mount>
+    btrfs receive --dump [options]
+        Receive subvolumes from a stream
+
+    btrfs quota enable <path>
+        Enable subvolume quota support for a filesystem.
+    btrfs quota disable <path>
+        Disable subvolume quota support for a filesystem.
+    btrfs quota rescan [-sw] <path>
+        Trash all qgroup numbers and scan the metadata again with the current config.
+
+    btrfs qgroup assign [options] <src> <dst> <path>
+        Assign SRC as the child qgroup of DST
+    btrfs qgroup remove <src> <dst> <path>
+        Remove a child qgroup SRC from DST.
+    btrfs qgroup create <qgroupid> <path>
+        Create a subvolume quota group.
+    btrfs qgroup destroy <qgroupid> <path>
+        Destroy a quota group.
+    btrfs qgroup show [options] <path>
+        Show subvolume quota groups.
+    btrfs qgroup limit [options] <size>|none [<qgroupid>] <path>
+        Set the limits a subvolume quota group.
+
+    btrfs replace start [-Bfr] <srcdev>|<devid> <targetdev> <mount_point>
+        Replace device of a btrfs filesystem.
+    btrfs replace status [-1] <mount_point>
+        Print status and progress information of a running device replace
+    btrfs replace cancel <mount_point>
+        Cancel a running device replace operation.
+
+    btrfs help [--full]
+        Display help information
+    btrfs version
+        Display btrfs-progs version
+
+Use --help as an argument for information on a specific group or command.
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo btrfs devide add /dev/sdd /mnt/prakt[1P[1@c
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ soud [K[K[Kdo btrfs filesystem balance start --full-balance /mnt/prakt
+bash: sodo: Kommando nicht gefunden.
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sodo btrfs filesystem balance start --full-balance /mnt/prakt[C[C[1P[1@u
+Done, had to relocate 3 out of 3 chunks
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo btrfs filesystem balance start --full-balance /mnt/prakt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo btrfs filesystem show /mnt/prakt
+Label: none  uuid: 455f5e71-33aa-45c3-86a7-c58dc163a05d
+	Total devices 3 FS bytes used 960.00KiB
+	devid    1 size 10.00GiB used 1.03GiB path /dev/sdb
+	devid    2 size 10.00GiB used 1.25GiB path /dev/sdc
+	devid    3 size 10.00GiB used 1.28GiB path /dev/sdd
+
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ btrfs filesystem df /mnt/prakt
+Data, RAID0: total=3.00GiB, used=832.00KiB
+System, RAID1: total=32.00MiB, used=16.00KiB
+Metadata, RAID1: total=256.00MiB, used=112.00KiB
+GlobalReserve, single: total=16.00MiB, used=0.00B
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sud o[K[K[K[K[Ksudo btrfs device remove 7dev/sd[K[K[K[K[K[K[K/dev/sdc /mnt/prakt
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo btrfs filesystem balance start --full-balance /mnt/prakt
+Done, had to relocate 3 out of 3 chunks
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo btrfs s[Kfilesystem show /mnt/prakt
+Label: none  uuid: 455f5e71-33aa-45c3-86a7-c58dc163a05d
+	Total devices 2 FS bytes used 704.00KiB
+	devid    1 size 10.00GiB used 1.28GiB path /dev/sdb
+	devid    3 size 10.00GiB used 1.28GiB path /dev/sdd
+
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo btrfs subvolume create /mnt/prakt/SV![K1
+Create subvolume '/mnt/prakt/SV1'
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ls /mnt/prakt/SV1
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sud o[K[Ko btrfs subvolume list /mt[Knt/prakt
+ID 264 gen 59 top level 5 path SV1
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo chmod a+w /mnt/prakt/SV1
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ touc h [K[K[Kh datei1.txt[K[K[K[K[K[K[K[K[K[K/mnt/prakt/SV1/datei1.txt
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ touch /mnt/prakt/SV1/datei1.txt[1P.txt2.txt
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ls m[K/mnt/prakt/SV1
+datei1.txt  datei2.txt
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sud o[K[Ko btrfs subvolume create /mn[Knt/prakt/SV1/SV11
+Create subvolume '/mnt/prakt/SV1/SV11'
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ so[Kudo btrfs subol[K[Kvo.u[K[K[Klu[K[Kolume list /min[K[Knt/prakt
+ID 264 gen 61 top level 5 path SV1
+ID 265 gen 61 top level 264 path SV1/SV11
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ls /mnt/prat[Kkt/SV1/SV11
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sud och[K[K[K[K o[K[Ko chmod a+2[Kw /mnt/prakt/SV1/SV11
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ touch /mnt/prakt/SV1/SV11/datei11.tsx[K[Kxt
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ touch /mnt/prakt/SV1/SV11/datei11.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Psudo chmod a+w /mnt/prakt/SV1/SV11[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctouch /mnt/prakt/SV1/SV11/datei11.txt[1P.txt2.txt
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo mkdir -p /mnt/SV1 /mnt/SV11
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo mount -o subvol=)[KSV1 /dev/sdb /mnt/SV1
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ls -R /mnt/SV1
+/mnt/SV1:
+datei1.txt  datei2.txt  [0m[34;42mSV11[0m
+
+/mnt/SV1/SV11:
+datei11.txt  datei12.txt
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ls /mnt/SV1/SV11
+datei11.txt  datei12.txt
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo mount -o subov[K[Kvol=SV1/SV11 /dev/S[Ksdb /mnt/SV11
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ls /mnt/SV11/
+datei11.txt  datei12.txt
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ls /mnt/SV1/SV11
+datei11.txt  datei12.txt
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo btrfs subvolume snapc[Kshot &/[K[K/mnt/prakt/SV1/SV11 /mnt/prakt/sv11-snapshot
+Create a snapshot of '/mnt/prakt/SV1/SV11' in '/mnt/prakt/sv11-snapshot'
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo btrfs vol[K[K[Ksubvolume list /mnt/prakt
+ID 264 gen 61 top level 5 path SV1
+ID 265 gen 64 top level 264 path SV1/SV11
+ID 266 gen 64 top level 5 path sv11-snapshot
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ls[K[Kls /mnt/prakt
+[0m[34;42mSV1[0m  [34;42msv11-snapshot[0m
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ clear
+[H[2J[3J]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo mkdir -p /mnt/SV11-Snapshot
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sou[K[Kudo mount -o subvol [K=sv11-snapshot /dev/sdb /mnt/SV11-Snapshot
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ls /mnt/SV11-Snapc[Ksht[Kot
+datei11.txt  datei12.txt
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ rm /mnt/SV11-Snapshot/datei11.txyt[K[Kt
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ls /mnt/SV11-Snapshot/
+datei12.txt
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ls /mnt/
+prakt/         SV1/           SV11/          SV11-Snapshot/ 
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ls /mnt/
+prakt/         SV1/           SV11/          SV11-Snapshot/ 
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ls /mnt/prakt/
+SV1/           sv11-snapshot/ 
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ls /mnt/prakt/SV1/SV11/
+datei11.txt  datei12.txt
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ r [Km /mnt/prakt/SV1/SV11/datei1[K2[K1[K[K[K[K[K[K[K/datei1[K[K[K[K[K[K[K[K1/datei1
+datei11.txt  datei12.txt  
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ rm /mnt/prakt/SV1/SV11/datei1
+datei11.txt  datei12.txt  
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ rm /mnt/prakt/SV1/SV11/datei12.txt
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ rm /mnt/prakt/SV1/SV11/datei12.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pls /mnt/prakt/SV1/SV11/
+datei11.txt
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ls /mnt/prakt/SV1/SV11/rm /mnt/prakt/SV1/SV11/datei12.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pls /mnt/prakt/SV1/SV11/[1PSV11-Snapshot/
+datei12.txt
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sud o[K[K o[K[Ko umount /mnt/SVf1[K[K11-Snapshot
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo btrfs subvolume --[K[K[K delete --comit-after /mnt/prakt/SV[K[Ksv11-snapshot
+usage: btrfs subvolume delete [options] <subvolume> [<subvolume>...]
+
+    Delete subvolume(s)
+
+    Delete subvolumes from the filesystem. The corresponding directory
+    is removed instantly but the data blocks are removed later.
+    The deletion does not involve full commit by default due to
+    performance reasons (as a consequence, the subvolume may appear again
+    after a crash). Use one of the --commit options to wait until the
+    operation is safely stored on the media.
+
+    -c|--commit-after      wait for transaction commit at the end of the operation
+    -C|--commit-each       wait for transaction commit after deleting each subvolume
+    -v|--verbose           verbose output of operations
+
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo btrfs subvolume delete --comit-after /mnt/prakt/sv11-snapshot[1@m
+Delete subvolume (commit): '/mnt/prakt/sv11-snapshot'
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ls /mnt/prakt
+[0m[34;42mSV1[0m
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo btrfs subo[Kvolume /[K[K list /mnt/prakt
+ID 264 gen 61 top level 5 path SV1
+ID 265 gen 67 top level 264 path SV1/SV11
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ clear
+[H[2J[3J]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo rmk[Kdir /n[Kmnt/SV11
+SV11/          SV11-Snapshot/ 
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo rmdir /mnt/SV11
+SV11/          SV11-Snapshot/ 
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo rmdir /mnt/SV11-Snapshot/
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo umount /mnt/SV1
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ sudo rmdir /mnt/SV1
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ wget https://github.com/ericchiang/containers-from-scratch&[K/releases/download/v0.1.0/rootfs.tar.gz
+--2021-06-21 13:14:36--  https://github.com/ericchiang/containers-from-scratch/releases/download/v0.1.0/rootfs.tar.gz
+Auflösen des Hostnamens github.com (github.com)… 140.82.121.3
+Verbindungsaufbau zu github.com (github.com)|140.82.121.3|:443 … verbunden.
+HTTP-Anforderung gesendet, auf Antwort wird gewartet … 302 Found
+Platz: https://github-releases.githubusercontent.com/71006166/5767750c-92cc-11e6-98bd-64be9b36cd82?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210621%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210621T111436Z&X-Amz-Expires=300&X-Amz-Signature=587de919e7f19ed07f261642b1c0920e8ee8d76d0a424399ae940353d6faa053&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=71006166&response-content-disposition=attachment%3B%20filename%3Drootfs.tar.gz&response-content-type=application%2Foctet-stream [folgend]
+--2021-06-21 13:14:36--  https://github-releases.githubusercontent.com/71006166/5767750c-92cc-11e6-98bd-64be9b36cd82?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20210621%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210621T111436Z&X-Amz-Expires=300&X-Amz-Signature=587de919e7f19ed07f261642b1c0920e8ee8d76d0a424399ae940353d6faa053&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=71006166&response-content-disposition=attachment%3B%20filename%3Drootfs.tar.gz&response-content-type=application%2Foctet-stream
+Auflösen des Hostnamens github-releases.githubusercontent.com (github-releases.githubusercontent.com)… 185.199.109.154, 185.199.110.154, 185.199.108.154, ...
+Verbindungsaufbau zu github-releases.githubusercontent.com (github-releases.githubusercontent.com)|185.199.109.154|:443 … verbunden.
+HTTP-Anforderung gesendet, auf Antwort wird gewartet … 200 OK
+Länge: 265734209 (253M) [application/octet-stream]
+Wird in »rootfs.tar.gz« gespeichert.
+
+rootfs.tar.gz                                     0%[                                                                                                     ]       0  --.-KB/s               rootfs.tar.gz                                     0%[                                                                                                     ] 223,77K  1,09MB/s               rootfs.tar.gz                                     0%[                                                                                                     ] 478,67K  1,17MB/s               rootfs.tar.gz                                     0%[                                                                                                     ] 766,67K  1,25MB/s               rootfs.tar.gz                                     0%[                                                                                                     ]   1,14M  1,42MB/s               rootfs.tar.gz                                     0%[                                                                                                     ]   1,56M  1,55MB/s               rootfs.tar.gz                                     0%[                                                                                                     ]   2,04M  1,69MB/s               rootfs.tar.gz                                     1%[>                                                                                                    ]   2,57M  1,82MB/s               rootfs.tar.gz                                     1%[>                                                                                                    ]   3,09M  1,92MB/s               rootfs.tar.gz                                     1%[>                                                                                                    ]   3,75M  2,07MB/s               rootfs.tar.gz                                     1%[>                                                                                                    ]   4,45M  2,21MB/s               rootfs.tar.gz                                     2%[=>                                                                                                   ]   5,19M  2,33MB/s               rootfs.tar.gz                                     2%[=>                                                                                                   ]   6,00M  2,48MB/s               rootfs.tar.gz                                     2%[=>                                                                                                   ]   6,81M  2,60MB/s               rootfs.tar.gz                                     3%[==>                                                                                                  ]   7,69M  2,72MB/s               rootfs.tar.gz                                     3%[==>                                                                                                  ]   8,60M  2,84MB/s    ETA 86s    rootfs.tar.gz                                     3%[==>                                                                                                  ]   9,65M  3,08MB/s    ETA 86s    rootfs.tar.gz                                     4%[===>                                                                                                 ]  10,67M  3,30MB/s    ETA 86s    rootfs.tar.gz                                     4%[===>                                                                                                 ]  11,73M  3,54MB/s    ETA 86s    rootfs.tar.gz                                     5%[====>                                                                                                ]  12,86M  3,86MB/s    ETA 86s    rootfs.tar.gz                                     5%[====>                                                                                                ]  14,00M  4,07MB/s    ETA 69s    rootfs.tar.gz                                     6%[=====>                                                                                               ]  15,23M  4,29MB/s    ETA 69s    rootfs.tar.gz                                     6%[=====>                                                                                               ]  16,54M  4,52MB/s    ETA 69s    rootfs.tar.gz                                     7%[======>                                                                                              ]  17,86M  4,84MB/s    ETA 69s    rootfs.tar.gz                                     7%[======>                                                                                              ]  19,23M  5,06MB/s    ETA 69s    rootfs.tar.gz                                     8%[=======>                                                                                             ]  20,64M  5,27MB/s    ETA 57s    rootfs.tar.gz                                     8%[=======>                                                                                             ]  22,06M  5,56MB/s    ETA 57s    rootfs.tar.gz                                     9%[========>                                                                                            ]  23,59M  5,77MB/s    ETA 57s    rootfs.tar.gz                                     9%[=========>                                                                                           ]  25,22M  6,00MB/s    ETA 57s    rootfs.tar.gz                                    10%[=========>                                                                                           ]  26,83M  6,30MB/s    ETA 57s    rootfs.tar.gz                                    11%[==========>                                                                                          ]  28,48M  6,52MB/s    ETA 48s    rootfs.tar.gz                                    11%[===========>                                                                                         ]  30,19M  6,72MB/s    ETA 48s    rootfs.tar.gz                                    12%[===========>                                                                                         ]  31,89M  7,00MB/s    ETA 48s    rootfs.tar.gz                                    13%[============>                                                                                        ]  33,76M  7,25MB/s    ETA 48s    rootfs.tar.gz                                    14%[=============>                                                                                       ]  35,58M  7,45MB/s    ETA 48s    rootfs.tar.gz                                    14%[=============>                                                                                       ]  37,45M  7,75MB/s    ETA 41s    rootfs.tar.gz                                    15%[==============>                                                                                      ]  39,44M  7,98MB/s    ETA 41s    rootfs.tar.gz                                    16%[===============>                                                                                     ]  41,47M  8,19MB/s    ETA 41s    rootfs.tar.gz                                    17%[================>                                                                                    ]  43,53M  8,51MB/s    ETA 41s    rootfs.tar.gz                                    18%[=================>                                                                                   ]  45,74M  8,75MB/s    ETA 41s    rootfs.tar.gz                                    18%[==================>                                                                                  ]  48,04M  9,01MB/s    ETA 34s    rootfs.tar.gz                                    19%[===================>                                                                                 ]  50,25M  9,34MB/s    ETA 34s    rootfs.tar.gz                                    20%[===================>                                                                                 ]  52,64M  9,59MB/s    ETA 34s    rootfs.tar.gz                                    21%[====================>                                                                                ]  55,17M  9,86MB/s    ETA 34s    rootfs.tar.gz                                    22%[=====================>                                                                               ]  57,54M  10,2MB/s    ETA 34s    rootfs.tar.gz                                    23%[======================>                                                                              ]  60,16M  10,5MB/s    ETA 29s    rootfs.tar.gz                                    24%[=======================>                                                                             ]  62,45M  10,6MB/s    ETA 29s    rootfs.tar.gz                                    25%[=========================>                                                                           ]  65,25M  11,1MB/s    ETA 29s    rootfs.tar.gz                                    26%[==========================>                                                                          ]  68,08M  11,4MB/s    ETA 29s    rootfs.tar.gz                                    27%[===========================>                                                                         ]  70,95M  11,7MB/s    ETA 29s    rootfs.tar.gz                                    29%[============================>                                                                        ]  73,96M  12,1MB/s    ETA 24s    rootfs.tar.gz                                    30%[=============================>                                                                       ]  77,09M  12,5MB/s    ETA 24s    rootfs.tar.gz                                    31%[==============================>                                                                      ]  79,83M  12,7MB/s    ETA 24s    rootfs.tar.gz                                    32%[================================>                                                                    ]  82,86M  13,1MB/s    ETA 24s    rootfs.tar.gz                                    33%[=================================>                                                                   ]  85,69M  13,2MB/s    ETA 24s    rootfs.tar.gz                                    34%[==================================>                                                                  ]  88,67M  13,4MB/s    ETA 21s    rootfs.tar.gz                                    36%[===================================>                                                                 ]  91,56M  13,7MB/s    ETA 21s    rootfs.tar.gz                                    37%[====================================>                                                                ]  94,89M  14,0MB/s    ETA 21s    rootfs.tar.gz                                    38%[======================================>                                                              ]  98,01M  14,2MB/s    ETA 21s    rootfs.tar.gz                                    39%[=======================================>                                                             ] 101,22M  14,5MB/s    ETA 21s    rootfs.tar.gz                                    41%[========================================>                                                            ] 104,40M  14,7MB/s    ETA 17s    rootfs.tar.gz                                    42%[=========================================>                                                           ] 107,64M  14,9MB/s    ETA 17s    rootfs.tar.gz                                    43%[===========================================>                                                         ] 111,04M  15,2MB/s    ETA 17s    rootfs.tar.gz                                    45%[============================================>                                                        ] 114,75M  15,5MB/s    ETA 17s    rootfs.tar.gz                                    46%[==============================================>                                                      ] 118,81M  15,9MB/s    ETA 17s    rootfs.tar.gz                                    48%[================================================>                                                    ] 123,03M  16,3MB/s    ETA 14s    rootfs.tar.gz                                    50%[=================================================>                                                   ] 127,22M  16,6MB/s    ETA 14s    rootfs.tar.gz                                    51%[===================================================>                                                 ] 131,78M  17,1MB/s    ETA 14s    rootfs.tar.gz                                    53%[=====================================================>                                               ] 136,54M  17,8MB/s    ETA 14s    rootfs.tar.gz                                    56%[=======================================================>                                             ] 142,05M  18,7MB/s    ETA 14s    rootfs.tar.gz                                    58%[=========================================================>                                           ] 147,29M  19,3MB/s    ETA 10s    rootfs.tar.gz                                    60%[============================================================>                                        ] 153,09M  20,4MB/s    ETA 10s    rootfs.tar.gz                                    62%[=============================================================>                                       ] 157,68M  20,8MB/s    ETA 10s    rootfs.tar.gz                                    63%[===============================================================>                                     ] 161,10M  20,7MB/s    ETA 10s    rootfs.tar.gz                                    65%[=================================================================>                                   ] 166,86M  21,3MB/s    ETA 10s    rootfs.tar.gz                                    68%[===================================================================>                                 ] 172,86M  22,2MB/s    ETA 7s     rootfs.tar.gz                                    70%[======================================================================>                              ] 178,86M  23,0MB/s    ETA 7s     rootfs.tar.gz                                    72%[========================================================================>                            ] 184,86M  24,0MB/s    ETA 7s     rootfs.tar.gz                                    75%[===========================================================================>                         ] 190,86M  24,6MB/s    ETA 7s     rootfs.tar.gz                                    77%[=============================================================================>                       ] 196,86M  25,1MB/s    ETA 7s     rootfs.tar.gz                                    80%[===============================================================================>                     ] 202,86M  25,7MB/s    ETA 4s     rootfs.tar.gz                                    82%[==================================================================================>                  ] 208,85M  26,3MB/s    ETA 4s     rootfs.tar.gz                                    84%[===================================================================================>                 ] 212,89M  25,5MB/s    ETA 4s     rootfs.tar.gz                                    85%[=====================================================================================>               ] 216,85M  25,3MB/s    ETA 4s     rootfs.tar.gz                                    88%[========================================================================================>            ] 223,40M  25,6MB/s    ETA 4s     rootfs.tar.gz                                    90%[==========================================================================================>          ] 229,73M  25,8MB/s    ETA 2s     rootfs.tar.gz                                    93%[=============================================================================================>       ] 236,07M  26,0MB/s    ETA 2s     rootfs.tar.gz                                    95%[===============================================================================================>     ] 242,59M  26,7MB/s    ETA 2s     rootfs.tar.gz                                    97%[=================================================================================================>   ] 246,85M  26,6MB/s    ETA 2s     rootfs.tar.gz                                   100%[====================================================================================================>] 253,42M  27,5MB/s    in 18s     
+
+2021-06-21 13:14:55 (14,0 MB/s) - »rootfs.tar.gz« gespeichert [265734209/265734209]
+
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ cp rootfs.tar.gz /mnt/prakt
+cp: reguläre Datei '/mnt/prakt/rootfs.tar.gz' kann nicht angelegt werden: Keine Berechtigung
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ cp rootfs.tar.gz /mnt/prakt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@s[1@u[1@d[1@o[1@ 
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ ls /mnt/prakt/
+[0m[01;31mrootfs.tar.gz[0m  [34;42mSV1[0m
+]0;itsadmin@itsclient: ~[01;32mitsadmin@itsclient[00m:[01;34m~[00m$ cd /mnt/r[Kprakt
+]0;itsadmin@itsclient: /mnt/prakt[01;32mitsadmin@itsclient[00m:[01;34m/mnt/prakt[00m$ clear
+[H[2J[3J]0;itsadmin@itsclient: /mnt/prakt[01;32mitsadmin@itsclient[00m:[01;34m/mnt/prakt[00m$ sudo tar -zxf rootfs.tar.gz
+]0;itsadmin@itsclient: /mnt/prakt[01;32mitsadmin@itsclient[00m:[01;34m/mnt/prakt[00m$ sudo btrfs subvolume create root_subvolume
+Create subvolume './root_subvolume'
+]0;itsadmin@itsclient: /mnt/prakt[01;32mitsadmin@itsclient[00m:[01;34m/mnt/prakt[00m$ sudo mv rootfs/* root_subvo,u[K[Klume
+]0;itsadmin@itsclient: /mnt/prakt[01;32mitsadmin@itsclient[00m:[01;34m/mnt/prakt[00m$ ls rootts[K[Kfs/
+]0;itsadmin@itsclient: /mnt/prakt[01;32mitsadmin@itsclient[00m:[01;34m/mnt/prakt[00m$ rmdir rootfs
+rmdir: konnte 'rootfs' nicht entfernen: Keine Berechtigung
+]0;itsadmin@itsclient: /mnt/prakt[01;32mitsadmin@itsclient[00m:[01;34m/mnt/prakt[00m$ rmdir rootfs[1@s[1@u[1@d[1@o[1@ 
+]0;itsadmin@itsclient: /mnt/prakt[01;32mitsadmin@itsclient[00m:[01;34m/mnt/prakt[00m$ sudo btrfs filesystem df /mnt/prakt
+Data, RAID0: total=2.00GiB, used=914.79MiB
+System, RAID1: total=32.00MiB, used=16.00KiB
+Metadata, RAID1: total=256.00MiB, used=23.78MiB
+GlobalReserve, single: total=16.00MiB, used=0.00B
+]0;itsadmin@itsclient: /mnt/prakt[01;32mitsadmin@itsclient[00m:[01;34m/mnt/prakt[00m$ sudo btrfs subvolume snapshot root_subvolume root_container1
+Create a snapshot of 'root_subvolume' in './root_container1'
+]0;itsadmin@itsclient: /mnt/prakt[01;32mitsadmin@itsclient[00m:[01;34m/mnt/prakt[00m$ ls root_container1/
+[0m[01;34mbin[0m  [01;34mboot[0m  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;34mlib[0m  [01;34mlib64[0m  [01;34mmedia[0m  [01;34mmnt[0m  [01;34mopt[0m  [01;34mproc[0m  [01;34mroot[0m  [01;34mrun[0m  [01;34msbin[0m  [01;34msrv[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvar[0m
+]0;itsadmin@itsclient: /mnt/prakt[01;32mitsadmin@itsclient[00m:[01;34m/mnt/prakt[00m$ sud obt[K[K[K[K[Kls root_container1/sudo btrfs subvolume snapshot root_subvolume root_container1[K2
+Create a snapshot of 'root_subvolume' in './root_container2'
+]0;itsadmin@itsclient: /mnt/prakt[01;32mitsadmin@itsclient[00m:[01;34m/mnt/prakt[00m$ ls root_container2
+[0m[01;34mbin[0m  [01;34mboot[0m  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;34mlib[0m  [01;34mlib64[0m  [01;34mmedia[0m  [01;34mmnt[0m  [01;34mopt[0m  [01;34mproc[0m  [01;34mroot[0m  [01;34mrun[0m  [01;34msbin[0m  [01;34msrv[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvar[0m
+]0;itsadmin@itsclient: /mnt/prakt[01;32mitsadmin@itsclient[00m:[01;34m/mnt/prakt[00m$ sud ob[K[K[K [Ko btrfs filesystem df /mnt/prakt
+Data, RAID0: total=2.00GiB, used=914.79MiB
+System, RAID1: total=32.00MiB, used=16.00KiB
+Metadata, RAID1: total=256.00MiB, used=23.84MiB
+GlobalReserve, single: total=16.00MiB, used=0.00B
+]0;itsadmin@itsclient: /mnt/prakt[01;32mitsadmin@itsclient[00m:[01;34m/mnt/prakt[00m$ [K]0;itsadmin@itsclient: /mnt/prakt[01;32mitsadmin@itsclient[00m:[01;34m/mnt/prakt[00m$ [K]0;itsadmin@itsclient: /mnt/prakt[01;32mitsadmin@itsclient[00m:[01;34m/mnt/prakt[00m$ ls /mnt/[K[K[K[K[Kroot_subvolume/
+[0m[01;34mbin[0m  [01;34mboot[0m  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;34mlib[0m  [01;34mlib64[0m  [01;34mmedia[0m  [01;34mmnt[0m  [01;34mopt[0m  [01;34mproc[0m  [01;34mroot[0m  [01;34mrun[0m  [01;34msbin[0m  [01;34msrv[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvar[0m
+]0;itsadmin@itsclient: /mnt/prakt[01;32mitsadmin@itsclient[00m:[01;34m/mnt/prakt[00m$ ls root_container1
+[0m[01;34mbin[0m  [01;34mboot[0m  [01;34mcontainer1_added_subdir_1[0m  container1_added.txt  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;34mlib[0m  [01;34mlib64[0m  [01;34mmedia[0m  [01;34mmnt[0m  [01;34mopt[0m  [01;34mproc[0m  [01;34mroot[0m  [01;34mrun[0m  [01;34msbin[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvar[0m
+]0;itsadmin@itsclient: /mnt/prakt[01;32mitsadmin@itsclient[00m:[01;34m/mnt/prakt[00m$ ls root_container2
+[0m[01;34mbin[0m  [01;34mboot[0m  [01;34mcontainer2_added_subdir_1[0m  container2_added.txt  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;34mlib[0m  [01;34mlib64[0m  [01;34mmnt[0m  [01;34mopt[0m  [01;34mproc[0m  [01;34mroot[0m  [01;34mrun[0m  [01;34msbin[0m  [01;34msrv[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvar[0m
+]0;itsadmin@itsclient: /mnt/prakt[01;32mitsadmin@itsclient[00m:[01;34m/mnt/prakt[00m$ du[K[Ksudo btrfs filesystem df /mnt/prakt
+Data, RAID0: total=2.00GiB, used=914.79MiB
+System, RAID1: total=32.00MiB, used=16.00KiB
+Metadata, RAID1: total=256.00MiB, used=24.47MiB
+GlobalReserve, single: total=16.00MiB, used=0.00B
+]0;itsadmin@itsclient: /mnt/prakt[01;32mitsadmin@itsclient[00m:[01;34m/mnt/prakt[00m$ exit
+exit
+
+Script done on 2021-06-21 13:22:57+02:00 [COMMAND_EXIT_CODE="0"]
